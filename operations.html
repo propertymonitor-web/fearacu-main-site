@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operations | FEAR-ACU — Field Protocols</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ops-hero {
+            background: linear-gradient(180deg, #0d0000 0%, #000 100%);
+            border-bottom: 2px solid #ff0000;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        .ops-hero h1 { font-size: 2.5rem; color: #ff0000; letter-spacing: 10px; text-transform: uppercase; }
+
+        .protocol {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            margin: 1.5rem 0;
+            overflow: hidden;
+        }
+        .protocol-header {
+            background: repeating-linear-gradient(45deg, #1a0000, #1a0000 10px, #0d0000 10px, #0d0000 20px);
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 1px solid #330000;
+            cursor: pointer;
+        }
+        .protocol-num { color: #ff0000; font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; }
+        .protocol-title { color: #ddd; letter-spacing: 3px; text-transform: uppercase; font-size: 0.85rem; }
+        .protocol-class {
+            margin-left: auto;
+            font-size: 0.6rem;
+            padding: 2px 8px;
+            border: 1px solid #ff4444;
+            color: #ff4444;
+            letter-spacing: 2px;
+        }
+        .protocol-body { padding: 1.5rem; }
+        .protocol-body p { color: #aaa; font-size: 0.85rem; line-height: 1.8; margin-bottom: 0.8rem; }
+        .step-list { list-style: none; padding-left: 0; }
+        .step-list li {
+            padding: 0.4rem 0 0.4rem 1.5rem;
+            border-bottom: 1px dotted #1a1a1a;
+            color: #bbb;
+            font-size: 0.85rem;
+            position: relative;
+        }
+        .step-list li::before { content: '▸'; position: absolute; left: 0; color: #ff4444; }
+        .step-list li:last-child { border-bottom: none; }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1px;
+            background: #1a1a1a;
+            border: 1px solid #222;
+            margin: 2rem 0;
+        }
+        .equip-item {
+            background: #0a0a0a;
+            padding: 1.2rem;
+            text-align: center;
+        }
+        .equip-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        .equip-name { color: #ddd; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
+        .equip-status {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.6rem;
+            letter-spacing: 2px;
+            padding: 2px 8px;
+            background: #0d1a00;
+            color: #44ff44;
+            border: 1px solid #44ff44;
+        }
+    </style>
+</head>
+<body>
+    <div class="classified-bar">◼ CLASSIFICATION LEVEL: RESTRICTED — FIELD PROTOCOLS ◼</div>
+
+    <div class="ops-hero">
+        <h1>Field Operations</h1>
+        <div class="hero-unit-type">FEAR-ACU PROTOCOLS — FOR AUTHORIZED PERSONNEL ONLY</div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="operations.html" class="active">Operations</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="questions.html">Questions</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Standard Operating Protocols</h2>
+        <p>All FEAR-ACU operatives are bound by the following containment protocols upon unit activation. Violation results in immediate suspension pending review.</p>
+
+        <div class="protocol">
+            <div class="protocol-header">
+                <span class="protocol-num">α</span>
+                <span class="protocol-title">Perimeter Containment Protocol</span>
+                <span class="protocol-class">PRIORITY: CRITICAL</span>
+            </div>
+            <div class="protocol-body">
+                <p>Upon receipt of activation signal, all field units establish a 500m-radius containment perimeter using established cordon methodology. Civilian evacuation initiated within 15 minutes. Authorized lethal force available only with explicit command authorization.</p>
+                <ul class="step-list">
+                    <li>Secure ingress/egress routes — do not leave gaps</li>
+                    <li>Issue public explanation: "Hazardous materials response" — deploy cover story</li>
+                    <li>Document all personnel entering cordon zone</li>
+                    <li>Establish visual isolation (thermal shielding, signal jamming where authorized)</li>
+                    <li>Await FEAR-COMMAND clearance before escalation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="protocol">
+            <div class="protocol-header">
+                <span class="protocol-num">β</span>
+                <span class="protocol-title">Information Control Protocol</span>
+                <span class="protocol-class">PRIORITY: HIGH</span>
+            </div>
+            <div class="protocol-body">
+                <p>FEAR-ACU maintains a dedicated information operations sub-team at every activation. Their role: clean the digital and physical record. This section covers authorized methods of information control — and notes where those methods have been publicly observed.</p>
+                <ul class="step-list">
+                    <li>Identify all observers within 1km radial; attempt voluntary removal via standard dispersal protocols</li>
+                    <li>"Pending investigation" designated as default civilian-facing explanation</li>
+                    <li>Media contact directed to Public Information Liaison (PIL) — internal designation only</li>
+                    <li>Digital footprint removal via AGIS framework (for authorized platforms only)</li>
+                    <li>Long-term NDA compliance program administered through private contractor</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="protocol">
+            <div class="protocol-header">
+                <span class="protocol-num">γ</span>
+                <span class="protocol-title">Civilian Extraction Protocol</span>
+                <span class="protocol-class">PRIORITY: STANDARD</span>
+            </div>
+            <div class="protocol-body">
+                <p>Civilian extraction is the final and most delicate phase of FEAR-ACU response. Subject relocation is conducted under the guise of "protective custody" with full domestic legal compliance framework invoked retroactively where necessary.</p>
+            </div>
+        </div>
+
+        <h2>Equipment &amp; Deployed Assets</h2>
+        <div class="equipment-grid">
+            <div class="equip-item">
+                <div class="equip-icon">🚐</div>
+                <div class="equip-name">MCV-ACU</div>
+                <div class="equip-status">FIELD ACTIVE</div>
+            </div>
+            <div class="equip-item">
+                <div class="equip-icon">📡</div>
+                <div class="equip-name">IAE-7 Comm Suite</div>
+                <div class="equip-status">ENCRYPTED</div>
+            </div>
+            <div class="equip-item">
+                <div class="equip-icon">🦺</div>
+                <div class="equip-name">NIV III Armor Kit</div>
+                <div class="equip-status">STANDARD ISSUE</div>
+            </div>
+            <div class="equip-item">
+                <div class="equip-icon">🔇</div>
+                <div class="equip-name">Signal Jamming Unit</div>
+                <div class="equip-status">AUTHORIZED USE</div>
+            </div>
+            <div class="equip-item">
+                <div class="equip-icon">📹</div>
+                <div class="equip-name">Thermal Imaging Kit</div>
+                <div class="equip-status">FIELD READY</div>
+            </div>
+            <div class="equip-item">
+                <div class="equip-icon">📋</div>
+                <div class="equip-name">AGIS Digital Suite</div>
+                <div class="equip-status">RESTRICTED</div>
+            </div>
+        </div>
+
+        <div class="img-block">
+            <img src="images/vehicle.png" alt="MCV-ACU in field position">
+            <div class="img-caption">// MCV-ACU — CONTAINMENT VEHICLE IN FIELD POSITION, UNKNOWN LOCATION</div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="disclaimer">
+            <div class="disclaimer-label">◼ Cosplay Disclaimer ◼</div>
+            <p>All information on this page is fictional and created for cosplay immersion purposes. FEAR-ACU is not a real organization. This content does not describe real government protocols or equipment.</p>
+        </div>
+        <div class="corp-info">© 2026 FEAR-ACU COSPLAY DIVISION — <b>A WOLF REACTIVE SYSTEMS PRODUCT</b></div>
+    </footer>
+    <script>
+        document.head.insertAdjacentHTML('beforeend', `<style>
+            body::after{content:'';position:fixed;top:0;left:0;right:0;bottom:0;
+            background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px);
+            pointer-events:none;z-index:9999;}
+        </style>`);
+    </script>
+</body>
+</html>
