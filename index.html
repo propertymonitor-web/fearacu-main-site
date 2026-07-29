@@ -26,7 +26,6 @@
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="operations.html">Operations</a></li>
-            <li><a href="news.html">News</a></li>
             <li><a href="questions.html">Questions</a></li>
         </ul>
     </nav>
@@ -107,21 +106,21 @@
                 <div class="img-caption">// OPERATIVES — FEAR-DELTA-01 RESPONSE TEAM, READY DEPLOYMENT STATUS</div>
             </div>
 
-            <!-- LATEST NEWS SNIPPET -->
-            <h2 style="margin-top:3rem;">Recent Developments</h2>
-            <div class="news-grid" style="margin-top:1rem;">
-                <div class="news-card">
-                    <span class="news-tag">COORDINATION</span>
-                    <h3>FEAR-ACU Units Observe Joint Training with Austin Metro PD</h3>
-                    <p>Multiple FEAR-ACU tactical vehicles were observed participating in coordinated training exercises with Austin Metro Police Department earlier this week. Joint press release expected shortly.</p>
-                    <div class="news-date">[ IMAGE / UNVERIFIED — VERIFY WITH LOCAL SOURCES ]</div>
-                </div>
-                <div class="news-card">
-                    <span class="news-tag">PERSONNEL</span>
-                    <h3>New Command Structure Confirmed for Texas Division</h3>
-                    <p>Internal documents circulating online reference a restructured Texas command chain under a newly promoted Division Commander. Identity not officially released.</p>
-                    <div class="news-date">[ UNVERIFIED — COMMUNITY REPORT ]</div>
-                </div>
+            <!-- FEAR COMMAND UPDATE -->
+            <h2 style="margin-top:3rem;">FEAR Command — Situation Report</h2>
+            <div class="mission-block">
+                <p>
+                    All FEAR-ACU field operatives are reminded that unauthorized communication with outside media regarding ongoing containment actions is a direct violation of command protocol. The following items are for <strong>command personnel only</strong> — dissemination to civilian or press elements is prohibited.
+                </p>
+                <p>
+                    <strong style="color:#ff4444;">Item 1 — Media Intrusion:</strong> <em>The Wire</em> by <a href="https://fearacu-news-wire.netlify.app/" style="color:#ff4444;text-decoration:underline;">News Wire</a> has been spotted around several incidents and "journalists" have had to be "removed" from inside containment zones. Field commanders are authorized to establish broader cordon distances when media elements are present. Do not engage directly — redirect through the Public Information Liaison channel.
+                </p>
+                <p>
+                    <strong style="color:#ff4444;">Item 2 — Austin Metro Joint Exercise:</strong> Coordination with Austin Metro PD on the upcoming field exercise remains on track. All participating operatives should have received updated protocol packets via the IAE-7 comm suite. Questions to your Section Leader.
+                </p>
+                <p>
+                    <strong style="color:#ff4444;">Item 3 — Signal Anomalies — West Texas:</strong> Unregistered frequency activity continues. Monitoring teams have been rotated. Report any unexplained comms behavior up the chain immediately — do not wait for scheduled debrief.
+                </p>
             </div>
 
         </div>
@@ -177,19 +176,6 @@
                 setTimeout(() => { hero.style.transform=''; hero.style.opacity='1'; }, 80);
             }
         }, 200);
-    </script>
-    <script src="ticker.js"></script>
-    <script>
-      (function(){
-        const clk = document.getElementById("ticker-clock");
-        if(!clk) return;
-        const pad = n => String(n).padStart(2,"0");
-        function tick(){
-          const d = new Date();
-          clk.textContent = pad(d.getHours())+":"+pad(d.getMinutes())+":"+pad(d.getSeconds());
-        }
-        tick(); setInterval(tick, 1000);
-      })();
     </script>
 </body>
 </html>

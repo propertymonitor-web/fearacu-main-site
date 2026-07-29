@@ -466,23 +466,22 @@
         }
         .disclaimer {
             background: #0a0000;
-            border: 1px dashed #ff0000;
-            padding: 1.2rem;
-            margin: 0 auto 1.5rem;
+            border: 1px dashed #333;
+            padding: 0.6rem 1rem;
+            margin: 0 auto 0.8rem;
             max-width: 900px;
         }
         .disclaimer-label {
-            color: #ff0000;
-            font-size: 0.7rem;
-            letter-spacing: 4px;
+            color: #888;
+            font-size: 0.6rem;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
+            margin-bottom: 0.3rem;
         }
         .disclaimer p {
-            color: #888;
-            font-size: 0.8rem;
-            line-height: 1.7;
+            color: #666;
+            font-size: 0.7rem;
+            line-height: 1.5;
             margin: 0;
         }
         .corp-info {
